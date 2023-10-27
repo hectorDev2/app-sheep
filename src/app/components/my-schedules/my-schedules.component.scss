@@ -1,0 +1,82 @@
+@import "../../../sass/helpers/variables";
+
+mat-slide-toggle{
+  position: absolute;
+  left: 1rem;
+}
+
+.my-schedules {
+  &.subtitle {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    > .icon {
+      color: $color-grey-dark;
+    }
+    > .label {
+      font-size: 18px;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+mat-header-cell {
+  font-size: 16px;
+  justify-content: center;
+}
+
+.mat-table {
+  margin: auto;
+  max-height: calc(80% - 216px);
+  overflow: auto;
+  &.admin {
+    max-height: calc(80% - 250px) !important;
+  }
+}
+
+.icon-status {
+  color: $color-grey-dark;
+  padding-left: 1rem;
+
+  &.done {
+    color: $color-green;
+  }
+  &.pending {
+    color: $color-orange;
+    margin-left: 2.5rem;
+  }
+  &.delete {
+    cursor: pointer;
+    &:hover{
+      color: $color-red-light;
+    }
+  }
+}
+
+.l-button {
+ &.disabled {
+  &.clean-list {
+
+    margin-left: 75%;
+    position: relative;
+    bottom: 1rem;
+  }
+ }
+ &.upload-csv {
+  margin-left: 75%;
+  position: relative;
+  bottom: 2.5em;
+  background-color: $color-brown;
+  color: $color-white;
+  &:hover{
+    background-color: $color-black;
+  }
+ }
+}
+
+.filters {
+  display: flex;
+  margin-left: 10%;
+  align-items: center;
+}

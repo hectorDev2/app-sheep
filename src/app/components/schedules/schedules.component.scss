@@ -1,0 +1,77 @@
+@import "../../sass/helpers/variables";
+
+.header {
+  text-align: start;
+  padding: 2rem;
+  margin-left: 3rem;
+  > h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+.container {
+  overflow: hidden;
+  height: calc(100% - 170px) !important;
+}
+
+.filters {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+  &.-date {
+    > .field-datepicker {
+      font-family: $text;
+    }
+  }
+}
+
+mat-cell {
+  margin-bottom: 0.8rem;
+}
+.list-header {
+  font-size: 16px;
+  justify-content: center;
+  &.hours {
+    margin-left: 1.5rem;
+  }
+  &.right {
+    margin-right: 1rem;
+  }
+}
+
+.table-hours {
+  height: calc(100% - 200px);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  /*change color of label*/
+  color: $color-grey !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: $color-brown-dark !important;
+}
+
+::ng-deep .mat-form-field-label {
+  /*change color of label*/
+  color: $color-black !important;
+}
+
+mat-datepicker-toggle {
+  color: $color-grey-dark !important;
+
+  &:hover {
+    color: $color-black !important;
+  }
+}
+
+::ng-deep .mat-calendar-body-selected {
+  background-color: $color-black !important;
+}

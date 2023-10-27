@@ -1,0 +1,43 @@
+@import "../../sass/helpers/variables";
+
+.content {
+ 
+
+  >.label-header {
+    grid-column: 1/4;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 55.68px;
+    margin-top: 1rem;
+
+    >label {
+      margin-left: 8rem;
+    }
+  }
+
+  >.barber-info {
+    display: grid;
+    justify-items: center;
+
+    &.-barber-two {
+      grid-column: 2/4;
+      text-align: center;
+    }
+  }
+
+}
+
+.name-barber {
+  font-size:  calc(60% + 1.8vmin);
+  font-weight: 700;
+  color: $color-black;
+  margin-top: 0.2rem;
+  text-transform: capitalize;
+}
+
+.descrition-barber {
+  text-align: center;
+  font-weight: 700;
+  max-width: 55%;
+  font-size:  calc(60% + 0.6vmin);
+}

@@ -1,0 +1,22 @@
+<main>
+  <mat-toolbar>
+    <span class="logo">
+      <a [routerLink]="['']">
+        <img src="assets/logo-white.png" alt="logo" class="logoMain" />
+      </a>
+    </span>
+    <!-- <a class="header-button" mat-button [routerLink]="['']" >Home</a> -->
+    <a class="" mat-button [routerLink]="['/about']">Nosotros</a>
+    <a class="" mat-button [routerLink]="['/schedules']">Agenda</a>
+    <a class="" mat-button [routerLink]="['/barbers']">Barberos</a>
+    <a class="" mat-button [routerLink]="['/locales']">Locales</a>
+    <a class="" mat-button [routerLink]="['/tattoos']">Tatto</a>
+  </mat-toolbar>
+  <mat-list *ngIf="openList" role="list">
+    <div class="triangle-up"></div>
+    <mat-list-item role="listitem" [routerLink]="['/admin']"
+      >Meu perfil</mat-list-item
+    >
+    <mat-list-item role="listitem">Sair</mat-list-item>
+  </mat-list>
+</main>

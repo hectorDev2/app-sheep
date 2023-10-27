@@ -1,0 +1,79 @@
+@import "../../../sass/helpers/variables";
+main {
+  width: 100%;
+  min-height: 75px;
+  color: $color-white;
+  background-color: rgb(3, 3, 3);
+  font-size: 12px;
+}
+
+.container {
+  height: 7vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  align-content: center;
+}
+
+.box {
+  box-sizing: border-box;
+  margin: 0;
+
+  &.box-1,
+  .box-2,
+  .box-3 {
+    text-align: center;
+  }
+  &.box-1 > h1 {
+    font-weight: 500;
+    font-size: 13px;
+  }
+
+  &.box-2 {
+    text-align: center;
+    > .mat-icon {
+      right: 0.5rem;
+    }
+  }
+
+  &.box-3 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    > .mat-icon {
+      right: 1rem;
+    }
+  }
+
+  &.box-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    > .logo-social-medias {
+      background-color: $color-white;
+      border-radius: 100%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $color-brown;
+      }
+    }
+  }
+
+  > .mat-icon {
+    position: relative;
+    opacity: 0.8;
+    top: 0.4rem;
+  }
+
+  &.text-secundary {
+    color: $color-grey;
+    opacity: 0.4;
+  }
+}
+
+.container-footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}

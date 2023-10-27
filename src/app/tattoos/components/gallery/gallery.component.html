@@ -1,0 +1,32 @@
+<h2 class="text-5xl text-center my-5">Nuestros trabajos</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-2">
+  <img
+    *ngFor="let item of images"
+    class="h-auto max-w-full rounded-lg"
+    data-modal-target="defaultModal"
+    data-modal-toggle="defaultModal"
+    [src]="item"
+    type="button"
+    (click)="selectImage(item)"
+    alt=""
+  />
+</div>
+
+<div
+  id="defaultModal"
+  tabindex="-1"
+  aria-hidden="true"
+  class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+>
+  <div class="relative w-full max-w-2xl max-h-full">
+    <!-- Modal content -->
+    <img
+      class="h-auto max-w-full rounded-lg"
+      data-modal-target="defaultModal"
+      data-modal-toggle="defaultModal"
+      [src]="imageSelect"
+      type="button"
+      alt=""
+    />
+  </div>
+</div>
