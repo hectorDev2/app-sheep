@@ -10,6 +10,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ShapesBackgroundComponent } from './components/shapes-background/shapes-background.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +24,10 @@ import { MatIconModule } from '@angular/material/icon';
     NavbarComponent,
     ContactPageComponent,
     HomePageComponent,
+    AboutPageComponent,
+    ShapesBackgroundComponent,
   ],
-  imports: [CommonModule, SharedModule, TattooRoutingModule],
+  imports: [CommonModule, SharedModule, TattooRoutingModule, RouterModule],
   exports: [
     HomePageComponent,
     AboutComponent,
@@ -31,7 +36,6 @@ import { MatIconModule } from '@angular/material/icon';
     ContactPageComponent,
     FooterComponent,
     NavbarComponent,
-    MatIconModule,
   ],
 })
 export class TattoosModule {}

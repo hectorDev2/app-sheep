@@ -1,22 +1,56 @@
 <main>
-  <mat-toolbar>
+  <div class="flex justify-evenly bg-black text-white items-center h-[75px]">
     <span class="logo">
       <a [routerLink]="['']">
         <img src="assets/logo-white.png" alt="logo" class="logoMain" />
       </a>
     </span>
     <!-- <a class="header-button" mat-button [routerLink]="['']" >Home</a> -->
-    <a class="" mat-button [routerLink]="['/about']">Nosotros</a>
-    <a class="" mat-button [routerLink]="['/schedules']">Agenda</a>
-    <a class="" mat-button [routerLink]="['/barbers']">Barberos</a>
-    <a class="" mat-button [routerLink]="['/locales']">Locales</a>
-    <a class="" mat-button [routerLink]="['/tattoos']">Tatto</a>
-  </mat-toolbar>
-  <mat-list *ngIf="openList" role="list">
-    <div class="triangle-up"></div>
-    <mat-list-item role="listitem" [routerLink]="['/admin']"
-      >Meu perfil</mat-list-item
+    <a
+      class="font-bold text-sm lg:text-xl m-2 lg:m-10 relative w-max one"
+      mat-button
+      [routerLink]="['/about']"
+      >Nosotros
+      <span
+        class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"
+      ></span>
+    </a>
+    <a
+      class="font-bold text-sm lg:text-xl m-2 lg:m-10 relative w-max one"
+      mat-button
+      [routerLink]="['/schedules']"
     >
-    <mat-list-item role="listitem">Sair</mat-list-item>
-  </mat-list>
+      Agenda
+      <span
+        class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"
+      ></span>
+    </a>
+    <a
+      class="font-bold text-sm lg:text-xl m-2 lg:m-10 relative w-max one"
+      mat-button
+      [routerLink]="['/barbers']"
+      >Barberos
+      <span
+        class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"
+      ></span>
+    </a>
+    <a
+      class="font-bold text-sm lg:text-xl m-2 lg:m-10 relative w-max one"
+      mat-button
+      [routerLink]="['/locales']"
+      >Locales
+      <span
+        class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"
+      ></span>
+    </a>
+    <a
+      class="font-bold text-sm lg:text-xl m-2 lg:m-10 relative w-max one"
+      mat-button
+      href="/tattoos"
+      >Tatto
+      <span
+        class="absolute -bottom-1 left-0 w-0 transition-all h-1 bg-yellow-400"
+      ></span>
+    </a>
+  </div>
 </main>

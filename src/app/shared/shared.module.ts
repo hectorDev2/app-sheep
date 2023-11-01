@@ -28,6 +28,7 @@ import { FormContactComponent } from './components/form-contact/form-contact.com
     HeaderComponent,
     AccordionComponent,
     FormContactComponent,
+    MatIconModule,
   ],
 })
 export class SharedModule {}

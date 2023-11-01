@@ -4,6 +4,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { TattoosLayoutComponent } from '../layout/tattoos-layout/tattoos-layout.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: '', component: HomePageComponent },
       { path: 'tienda', component: ShopPageComponent },
       { path: 'contacto', component: ContactPageComponent },
+      { path: 'about', component: AboutPageComponent },
     ],
   },
 ];

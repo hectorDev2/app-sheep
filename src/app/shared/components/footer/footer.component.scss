@@ -44,12 +44,7 @@ main {
     }
   }
 
-  &.box-4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    > .logo-social-medias {
+.logo-social-medias {
       background-color: $color-white;
       border-radius: 100%;
       cursor: pointer;
@@ -58,7 +53,6 @@ main {
         background-color: $color-brown;
       }
     }
-  }
 
   > .mat-icon {
     position: relative;

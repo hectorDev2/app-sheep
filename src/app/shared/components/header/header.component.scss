@@ -64,9 +64,13 @@ mat-list-item{
   left: 100px;
   z-index: 1;
 }
+.one:hover span:last-child {
+  width: 100%;
+}
 
 @media screen and (min-width: 1550px) {
   .mat-list-base {
     right: 5rem;
   }
 }
+
